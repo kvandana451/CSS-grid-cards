@@ -1,0 +1,338 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    max-width: max-content;
+    margin: 1rem auto;
+    /* border:1px solid red; */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 12px;
+
+}
+
+.card {
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0 5px 0;
+    height: 21.87rem;
+    width: 14rem;
+    box-shadow: 0 0 5px grey;
+    position: relative;
+    transition: top 2s ease-in .15s, box-shadow .15s ease-in-out .15s;
+}
+
+.card:hover {
+    box-shadow: none;
+    top: 4px;
+
+
+}
+
+.card .banner-text {
+    background-color: var(--black);
+    width: 14rem;
+    height: 3rem;
+    line-height: 3;
+    position: absolute;
+    top: 120px;
+}
+
+.stamp {
+    position: absolute;
+    bottom: .5rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.z {
+    background-color: #2b5876;
+    box-shadow: 0 0 10px darkblue;
+    background: linear-gradient(to right, #4e4376, #2b5876);
+}
+
+.b {
+    background-color: #f857a6;
+    box-shadow: 0 0 10px #fa3380;
+    background: linear-gradient(to right, #ff5858, #f857a6)
+}
+
+.g {
+    background-color: #4776E6;
+    box-shadow: 0 0 10px lightblue;
+    background: linear-gradient(to right, #a966e3, #4776E6)
+}
+
+.a {
+    background-color: #0184e1;
+    box-shadow: 0 0 10px skyblue;
+    background: linear-gradient(to right, rgb(103, 228, 220), skyblue, rgb(12, 159, 218))
+        /* background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); */
+}
+
+.v {
+    background-color: #AA076B;
+    box-shadow: 0 0 10px purple;
+    background: linear-gradient(to right, purple, #aa076B)
+}
+
+.u {
+    background-color: #DA22FF;
+    box-shadow: 0 0 10px violet;
+    background: linear-gradient(to right, #bf00e6, violet)
+}
+
+.t {
+    background-color: #02AAB0;
+    box-shadow: 0 0 10px lightgreen;
+    background: linear-gradient(to right, rgb(58, 238, 160), #02aab0)
+}
+
+.e {
+    background-color: #5433FF;
+    box-shadow: 0 0 10px lightblue;
+    background: linear-gradient(to right, rgb(146, 196, 213), #5433ff)
+}
+
+.d {
+    background-color: #2b5876;
+    box-shadow: 0 0 10px #fa3380;
+    background-color: linear-gradient(to right, #fa3, #fa3380, )
+}
+
+.p {
+    background: #2b5876;
+    box-shadow: 0 0 10px darkblue;
+    background: linear-gradient(to right, rgb(64, 172, 215), rgb(135, 222, 228))
+}
+
+.q {
+    background: #F2994A;
+    box-shadow: 0 0 10px lightyellow;
+    background: linear-gradient(to right, #fcdf5f, #f2994a)
+}
+
+.h {
+    background-color: #A770EF;
+    box-shadow: 0 0 10px purple;
+    background: linear-gradient(to right, #f3aaf3, #A770EF)
+}
+
+.m {
+    background-color: #f4c4f3;
+    box-shadow: 0 0 10px pink;
+    background: linear-gradient(to right, rgb(224, 91, 222), #f4c4f3)
+}
+
+.k {
+    background-color: #00c3ff;
+    box-shadow: 0 0 10px olive;
+    background: linear-gradient(to right, rgb(207, 207, 14), #06b2e7)
+}
+
+.t {
+    background-color: #5614B0;
+    box-shadow: 0 0 10px olive;
+    background: linear-gradient(to right, rgb(239, 239, 18), #5614b0)
+}
+
+.f {
+    background-color: #fc00ff;
+    box-shadow: 0 0 10px olive;
+    background: linear-gradient(to right, rgb(0, 177, 247), #fc00ff)
+}
+
+.one {
+    background-image: url('https://source.unsplash.com/820x900');
+    background-attachment: scroll;
+    background-origin: border-box;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.two {
+    background-image: url('https://source.unsplash.com/820x900');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.three {
+    background-image: url('https://source.unsplash.com/500x500');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-origin: border-box;
+    background-attachment: scroll
+}
+
+.four {
+    background-image: url('https://source.unsplash.com/550x520');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: border-box;
+
+}
+
+.five {
+    background-image: url('https://source.unsplash.com/660x630');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.six {
+    background-image: url('https://source.unsplash.com/700x770');
+    background-position: center;
+    background-size: cover;
+    background-origin: border-box;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.seven {
+    background-image: url('https://source.unsplash.com/880x820');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+}
+
+.eight {
+    background-image: url('https://source.unsplash.com/898x820');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.nine {
+    background-image: url('https://source.unsplash.com/8998x920');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.ten {
+    background-image: url('https://source.unsplash.com/898x960');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.eleven {
+    background-image: url('https://source.unsplash.com/999x888');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.twelve {
+    background-image: url('https://source.unsplash.com/1000x777');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.thirteen {
+    background-image: url('https://source.unsplash.com/2000x777');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.fourteen {
+    background-image: url('https://source.unsplash.com/2000x1000');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.fifteen {
+    background-image: url('https://source.unsplash.com/999x888');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.sixteen {
+    background-image: url('https://source.unsplash.com/880x820');
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/* Media Queries */
+/* @media only screen and (min-width:30.31rem) and (max-width:48rem){
+    .wrapper{
+        grid-template-columns: auto auto;;
+    }
+} */
+@media only screen and (min-width:35.5rem) {
+    .wrapper {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width:48rem) {
+    .wrapper {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (min-width:64rem) {
+    .wrapper {
+        grid-template-columns: auto auto auto auto;
+    }
+}
